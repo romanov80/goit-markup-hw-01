@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
 
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -11,13 +17,13 @@ body {
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 156px;
-  margin: 0;
   background-color: #E7E9FC;
-  width: 100%;
+  height: 72px;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 72px;
 }
 
@@ -27,12 +33,12 @@ header ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-right: 500px;
 }
 
 header nav {
   display: flex;
   gap: 24px;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -154,14 +160,13 @@ address {
   padding: 0;
   flex-wrap: wrap;
 }
-
-.titles li {
-  flex: 0 1 264px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-}
+  .titles li {
+    width: calc((100% - 72px) / 4); /* 3 gaps по 24px */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
 
 .shadow {
   display: none;
@@ -275,6 +280,57 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.portfolio {
+  padding: 120px 0;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.portfolio-item {
+  background-color: #ffffff;
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin: 32px 0 8px 16px;
+}
+
+.portfolio-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin: 0 0 32px 16px;
 }
 
 
