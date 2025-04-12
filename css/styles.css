@@ -18,11 +18,13 @@ body {
 
 header {
   background-color: #E7E9FC;
+  height: 72px;
 }
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 72px;
 }
 
 header ul {
@@ -106,7 +108,14 @@ address {
 
 .dark-background {
   background-color: #2E2F42;
-  padding: 188px 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .dark-background .container {
   display: flex;
@@ -147,6 +156,7 @@ address {
 }
 
 .titles {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -161,7 +171,7 @@ address {
   flex-wrap: wrap;
 }
   .titles li {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / 4); /* 3 gaps по 24px */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -192,6 +202,7 @@ address {
 
 .menegers {
   background-color: #F4F4FD;
+  min-height: 560px;
   padding-top: 56px;
 }
 
@@ -206,6 +217,8 @@ address {
 
 .menegers li {
   background-color: white;
+  width: 264px;
+  height: 380px;
   text-align: center;
 }
 
